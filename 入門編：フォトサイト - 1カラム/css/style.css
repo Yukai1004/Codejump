@@ -1,0 +1,154 @@
+@charset "UTF-8";
+body{
+    /*font-family: 'Meiryo',sans-serif;*/
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.4;
+}
+header{
+    max-width: 1000px;
+    margin: 60px auto;
+}
+header h1 a img{
+    width: 180px;
+    height: 18px;
+    margin-bottom: 15px;
+}
+header p img{
+    /*これ入れないと縮まない*/
+    max-width: 100%
+}
+main{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.index{
+    background-color: #F5F5F5;
+    padding: 60px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.index h2{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-top: 5px;
+    margin-bottom: 34px;
+}
+.inner{
+    border: 1px solid #333333;
+    padding: 30px;
+    text-align: center;
+    margin: 0 auto;
+}
+.inner ol{
+    display: inline-block;
+}
+.inner ol li{
+    margin-bottom: 20px;
+    list-style-type: decimal;
+}
+.inner ol li:last-child{
+    margin-bottom: 0;
+}
+.photoList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.photoList li{
+    flex-basis: 49%;
+}
+.photoList li img{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.detail{
+    background-color: #F5F5F5;
+    margin-top: 45px;
+    padding: 60px 75px 60px 60px;
+    text-align: center;
+    margin-bottom: 78px;
+}
+.detail h2{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-top: 5px;
+    margin-bottom: 35px;
+}
+.detailWrap{
+    display: flex;
+    text-align: left;
+}
+.detailWrap dl{
+    flex-basis: 37%;
+    border-right:1px solid #333333;
+}
+.detailWrap dd{
+    margin-bottom: 15px;
+}
+.detailWrap dd:last-child{
+    margin-bottom: 0;
+}
+.detailWrap div{
+    flex-basis: 63%;
+    margin-left: 40px;
+}
+.detailWrap div p{
+    margin-bottom: 24px;
+}
+.detailWrap div p:last-child{
+    margin-bottom: 0;
+}
+.detailWrap div p a{
+    text-decoration: underline;
+}
+.detailWrap div p a:hover{
+    color: #686868;
+}
+footer{
+    font-size: 10px;
+    margin-bottom: 17px;
+    text-align: center;
+}
+@media screen and (max-width: 1024px) {
+    header h1 a img{
+        margin-left: 10px;
+    }
+    .index{
+        padding: 40px 20px;
+        margin:0 20px 40px;
+    }
+    .inner{
+        text-align: left;
+    }
+    .photoList{
+        display: block;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .photoList li{
+        width: 100%;
+    }
+    .detail{
+        padding: 40px 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .detailWrap{
+        display: block;
+    }
+    .detailWrap dl{
+        padding-bottom: 40px;
+        border-bottom:1px solid #333333;
+        border-right: none;
+        margin-bottom: 40px;
+    }
+    .detailWrap div{
+        margin-left: 0px;
+    }
+
+}

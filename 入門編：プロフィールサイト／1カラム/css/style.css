@@ -1,0 +1,125 @@
+@charset "UTF-8";
+body {
+    color: #383e45;
+    font-size: 14.4px;
+}
+header{
+    height: 60px;
+    /*要素の幅は960pxを超えないが、それより狭いウィンドウではウィンドウや親要素に合わせて幅が縮小される*/
+    max-width: 960px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+header h1 img{
+    width: 120px;
+    height: 40px;
+}
+header nav ul{
+    display: flex;
+    
+}
+header nav ul li{
+    margin-left: 30px;
+}
+header nav ul li a{
+    color: #24292E;
+}
+.mainvisual{
+    margin-bottom: 80px;
+}
+.mainvisual img{
+    height: 600px;
+    width: 100%;
+    /*画像の歪みをなおす*/
+    object-fit: cover;
+}
+.main{
+    max-width: 960px;
+    padding: 0 4%;
+    margin: 0 auto 100px;
+    text-align: center;
+}
+main section h2{
+    display: inline-block;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: solid 1px;
+    margin-bottom:60px;
+    line-height: 1.5;
+}
+.innerWrap{
+    max-width: 960px;
+    display: flex;
+    margin: 0 auto;
+    /*flexボックスの子要素を中央寄せにする*/
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.profilePhoto p img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+.name{
+    text-align: left;
+}
+.name p{
+    line-height: 1.5;
+}
+h3{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.innerWrap2{
+    max-width: 960px;
+    display: flex;
+    margin: 0 auto;
+    /*flexボックスの子要素を均等配置する*/
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.innerWrap2 section{
+/*親要素のサイズ決まってないと効かない*/
+    flex-basis: 32%;
+    text-align: center;
+}
+.innerWrap2 section img{
+    width: 100%;
+}
+footer{
+    margin-top: 110px;
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:600px){
+    .mainvisual{
+    margin-bottom: 80px;
+    }
+    .innerWrap{
+    display: block;
+    margin: 0 auto;
+    }
+    .profilePhoto p img{
+    margin:0 auto;
+    }
+    h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
+    .innerWrap2{
+    display: block;
+    margin: 0 auto;
+    }
+    .innerWrap2 section{
+        margin-bottom: 40px;
+    }
+}
